@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>文本编辑器</title>
+</head>
+<body>
+  <textarea id="editor"></textarea>
+  <button id="save-button">保存</button>
+  <script>
+    const editor = document.getElementById('editor');
+    const saveButton = document.getElementById('save-button');
+
+    saveButton.addEventListener('click', () => {
+      const text = editor.value;
+      // 这里需要实现保存文本到服务器的逻辑
+      // 例如：
+      // fetch('/save', {
+      //   method: 'POST',
+      //   body: JSON.stringify({ text })
+      // })
+      //   .then(res => res.json())
+      //   .then(data => {
+      //     // 保存成功后的处理逻辑
+      //   });
+    });
+  </script>
+</body>
+</html>
